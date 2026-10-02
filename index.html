@@ -1,0 +1,1706 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://262bigdata.github.io/lambda26/">
+      
+      
+      
+        <link rel="next" href="proyecto-sello/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+  
+    <title>Big Data</title>
+  
+
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#big-data-2026-2" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Big Data" class="md-header__button md-logo" aria-label="Big Data" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Big Data
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Inicio
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/262bigdata/lambda26" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    262bigdata/lambda26
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Big Data" class="md-nav__button md-logo" aria-label="Big Data" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Big Data
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/262bigdata/lambda26" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    262bigdata/lambda26
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#producto-del-curso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto del curso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenido
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contenido">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#u1-arquitecturas-big-data-y-etl-batch-distribuido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        U1: Arquitecturas Big Data y ETL batch distribuido
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#u2-sistema-big-data-en-tiempo-real-ingesta-streaming-observabilidad-y-biml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        U2: Sistema Big Data en tiempo real: ingesta, streaming, observabilidad y BI/ML
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#u3-integracion-dataops-y-despliegue-del-sistema-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        U3: Integración, DataOps y despliegue del sistema final
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arquitectura-lambda26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arquitectura lambda26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arquitectura lambda26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nivel-1-contexto-vista-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nivel 1: Contexto (vista simple)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivel-2-detalle-de-contenedores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nivel 2: Detalle de contenedores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flujo-de-trabajo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujo de trabajo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enlaces
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía de Proyecto Sello
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guía de Proyecto Sello
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="proyecto-sello/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía del proyecto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="proyecto-sello/brief/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Brief técnico-analítico (plantilla)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="proyecto-sello/u1-producto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Producto U1 (plantilla-ejemplo)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="proyecto-sello/u2-producto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Producto U2 (plantilla-ejemplo)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="proyecto-sello/u3-producto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Producto U3 / Producto Final (plantilla-ejemplo)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="proyecto-sello/matriz-competencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matriz de competencias (ICACIT)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Silabos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Silabos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="silabo_bigdata_2026_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Silabo 2026-1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="silabo_bigdata_2026_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Silabo 2026-2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Arquitecturas Big Data y ETL batch distribuido
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1. Arquitecturas Big Data y ETL batch distribuido
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sesiones/S01_Arquitectura_Big_Data_Lambda_Kappa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    S1 - Arquitectura Big Data: Lambda y Kappa, batch vs. streaming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sesiones/S02_Fundamentos_PySpark_Transformaciones_Lazy_Evaluation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    S2 - Fundamentos PySpark: transformaciones, funciones, agrupaciones y evaluación perezosa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sesiones/S03_Procesamiento_Calidad_Datos_Particionamiento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    S3 - Procesamiento y Calidad de Datos: filtrado, duplicados, nulos y particionamiento analítico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sesiones/S04_ML_Distribuido_Regresion_Spark_MLlib/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    S4 - ML Distribuido con Spark MLlib (Regresión)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sesiones/S05_Evaluacion_Unidad_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    S5 - Evaluación de la Unidad I
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Sistema Big Data en tiempo real
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2. Sistema Big Data en tiempo real
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sesiones/S06_Ingesta_Eventos_Empresariales_Kafka/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    S6 - Ingesta de Eventos Empresariales en Tiempo Real
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sesiones/S07_Ingesta_Eventos_IoT_Sensores_Tiempo_Real/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    S7 - Ingesta de Eventos IoT/Sensores en Tiempo Real
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sesiones/S08_Procesamiento_Streaming_Spark_Ventanas_Watermarking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    S8 - Procesamiento en Streaming con Spark
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sesiones/S12_Evaluacion_Unidad_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    S12 - Evaluación de la Unidad II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Integración, DataOps y despliegue del sistema final
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    3. Integración, DataOps y despliegue del sistema final
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sesiones/S15_Evaluacion_Unidad_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    S15 - Evaluación de la Unidad III
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#producto-del-curso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto del curso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenido
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contenido">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#u1-arquitecturas-big-data-y-etl-batch-distribuido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        U1: Arquitecturas Big Data y ETL batch distribuido
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#u2-sistema-big-data-en-tiempo-real-ingesta-streaming-observabilidad-y-biml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        U2: Sistema Big Data en tiempo real: ingesta, streaming, observabilidad y BI/ML
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#u3-integracion-dataops-y-despliegue-del-sistema-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        U3: Integración, DataOps y despliegue del sistema final
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arquitectura-lambda26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arquitectura lambda26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arquitectura lambda26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nivel-1-contexto-vista-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nivel 1: Contexto (vista simple)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivel-2-detalle-de-contenedores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nivel 2: Detalle de contenedores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flujo-de-trabajo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujo de trabajo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enlaces
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="big-data-2026-2">Big Data 2026-2<a class="headerlink" href="#big-data-2026-2" title="Permanent link">&para;</a></h1>
+<p>Curso teórico-práctico de Big Data: arquitecturas Lambda/Kappa, procesamiento batch y streaming, observabilidad, analítica/ML distribuida y visualización BI.</p>
+<p><a href="https://github.com/262bigdata/lambda26"><code>lambda26</code></a> es un entorno integrado de procesamiento distribuido en batch y streaming con Spark y Kafka, con laboratorios reproducibles basados en Docker. El curso construye pipelines de datos, gestiona almacenamiento analítico en Parquet, aplica observabilidad y desarrolla soluciones BI/ML distribuidas.</p>
+<h2 id="producto-del-curso">Producto del curso<a class="headerlink" href="#producto-del-curso" title="Permanent link">&para;</a></h2>
+<p>Producto del curso = Producto U3:</p>
+<div class="highlight"><pre><span></span><code>Sistema Big Data distribuido end-to-end para procesamiento batch y streaming,
+analítica/ML, observabilidad y visualización BI para la toma de decisiones.
+</code></pre></div>
+<p>Resultado esperado del curso:</p>
+<p>Al finalizar el curso, el estudiante implementa, integra y sustenta una solución Big Data end-to-end que combina pipelines batch distribuidos, ingesta y procesamiento de eventos en tiempo real, analítica/ML a escala, observabilidad técnica y una capa de visualización BI, demostrando valor para la toma de decisiones. El producto se presenta en equipo, pero cada estudiante evidencia y defiende su aporte individual.</p>
+<h2 id="contenido">Contenido<a class="headerlink" href="#contenido" title="Permanent link">&para;</a></h2>
+<h3 id="u1-arquitecturas-big-data-y-etl-batch-distribuido">U1: Arquitecturas Big Data y ETL batch distribuido<a class="headerlink" href="#u1-arquitecturas-big-data-y-etl-batch-distribuido" title="Permanent link">&para;</a></h3>
+<p>Producto U1: pipeline batch de ETL distribuido con salidas analíticas en Parquet listas para BI/ML.</p>
+<p>Resultado esperado U1: el estudiante construye un pipeline batch reproducible con procesamiento distribuido, aplica transformaciones sobre datos a escala, valida la calidad básica de los datos, organiza salidas en formatos analíticos como Parquet y deja un dataset preparado para consumo BI/ML.</p>
+<table>
+<thead>
+<tr>
+<th>Sesión</th>
+<th>Tema (sílabo)</th>
+<th>Módulo <code>lambda26</code></th>
+<th>Trabajo principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="sesiones/S01_Arquitectura_Big_Data_Lambda_Kappa/">S1</a></td>
+<td>Arquitectura Big Data: arquitecturas Lambda y Kappa, batch vs. streaming.</td>
+<td><code>uso-pyspark</code></td>
+<td>Arquitectura Big Data seleccionada y justificada (Lambda o Kappa) para un caso de negocio propio.</td>
+</tr>
+<tr>
+<td><a href="sesiones/S02_Fundamentos_PySpark_Transformaciones_Lazy_Evaluation/">S2</a></td>
+<td>Fundamentos PySpark: extracción, transformaciones, funciones, agrupaciones, agregaciones, RDD y evaluación perezosa (lazy evaluation).</td>
+<td><code>uso-pyspark</code></td>
+<td>Transformaciones distribuidas documentadas, con evidencia del plan de ejecución (<code>explain()</code>).</td>
+</tr>
+<tr>
+<td><a href="sesiones/S03_Procesamiento_Calidad_Datos_Particionamiento/">S3</a></td>
+<td>Procesamiento distribuido y carga de datos particionada en HDFS y formatos analíticos, con validación de calidad de datos.</td>
+<td><code>uso-pyspark</code></td>
+<td>Salida analítica particionada en formato columnar, con controles de calidad (esquema, nulos, duplicados).</td>
+</tr>
+<tr>
+<td><a href="sesiones/S04_ML_Distribuido_Regresion_Spark_MLlib/">S4</a></td>
+<td>ML distribuido con Spark MLlib (Regresión).</td>
+<td><code>uso-pyspark</code></td>
+<td>Modelo de regresión distribuida entrenado, con métricas iniciales documentadas.</td>
+</tr>
+<tr>
+<td><a href="sesiones/S05_Evaluacion_Unidad_1/">S5</a></td>
+<td>Integración del procesamiento batch distribuido: arquitectura, PySpark, HDFS, formatos analíticos, particionamiento y ML distribuido.</td>
+<td>—</td>
+<td><strong>Producto U1:</strong> pipeline batch de ETL distribuido con salidas analíticas en Parquet listas para BI/ML.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="u2-sistema-big-data-en-tiempo-real-ingesta-streaming-observabilidad-y-biml">U2: Sistema Big Data en tiempo real: ingesta, streaming, observabilidad y BI/ML<a class="headerlink" href="#u2-sistema-big-data-en-tiempo-real-ingesta-streaming-observabilidad-y-biml" title="Permanent link">&para;</a></h3>
+<p>Producto U2: pipeline en tiempo real con ingesta de eventos empresariales e IoT/sensores, procesamiento streaming con Spark, observabilidad/costos y salidas BI/ML distribuidas.</p>
+<p>Resultado esperado U2: el estudiante implementa un pipeline Big Data en tiempo real que integra ingesta de eventos mediante Kafka, procesamiento distribuido con Spark Structured Streaming, observabilidad con Grafana y estimación de costos operacionales, y prepara salidas BI/ML distribuidas con series de tiempo e inferencia.</p>
+<table>
+<thead>
+<tr>
+<th>Sesión</th>
+<th>Tema (sílabo)</th>
+<th>Módulo <code>lambda26</code></th>
+<th>Trabajo principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="sesiones/S06_Ingesta_Eventos_Empresariales_Kafka/">S6</a></td>
+<td>Ingesta de eventos empresariales en tiempo real.</td>
+<td><code>uso-rapido</code> / <code>uso-microserv</code> + <code>kafka</code></td>
+<td>Publicación y consumo de eventos empresariales por Kafka, con contrato de evento documentado.</td>
+</tr>
+<tr>
+<td><a href="sesiones/S07_Ingesta_Eventos_IoT_Sensores_Tiempo_Real/">S7</a></td>
+<td>Ingesta de eventos IoT/sensores en tiempo real.</td>
+<td><code>uso-atmos</code> + <code>kafka</code></td>
+<td>Simulación de eventos de sensores integrada al pipeline de Kafka.</td>
+</tr>
+<tr>
+<td><a href="sesiones/S08_Procesamiento_Streaming_Spark_Ventanas_Watermarking/">S8</a></td>
+<td>Procesamiento en streaming con Spark: ventanas, watermarking y semántica de entrega.</td>
+<td><code>uso-pyspark</code> (consumidor) + <code>kafka</code></td>
+<td>Pipeline streaming con ventanas, watermarking y checkpointing.</td>
+</tr>
+<tr>
+<td>S9</td>
+<td>Observabilidad con Grafana y costos.</td>
+<td><code>obs</code></td>
+<td>Tablero de observabilidad con métricas, umbrales y estimación de costos.</td>
+</tr>
+<tr>
+<td>S10</td>
+<td>Series de tiempo e inferencia en streaming.</td>
+<td><code>uso-pyspark</code></td>
+<td>Modelo o inferencia de series de tiempo aplicado sobre datos batch y/o streaming.</td>
+</tr>
+<tr>
+<td>S11</td>
+<td>BI/ML distribuido con Spark: KPIs del BI y visualización de la predicción de series de tiempo.</td>
+<td><code>uso-pyspark</code> + <code>obs</code></td>
+<td>KPIs del flujo de eventos y predicción de series de tiempo visualizados en Grafana.</td>
+</tr>
+<tr>
+<td>S12</td>
+<td>Integración del procesamiento en tiempo real: Kafka, eventos empresariales e IoT, Spark Structured Streaming, observabilidad, costos y salidas BI/ML.</td>
+<td>—</td>
+<td><strong>Producto U2:</strong> pipeline en tiempo real con ingesta, streaming, observabilidad/costos y salidas BI/ML distribuidas.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="u3-integracion-dataops-y-despliegue-del-sistema-final">U3: Integración, DataOps y despliegue del sistema final<a class="headerlink" href="#u3-integracion-dataops-y-despliegue-del-sistema-final" title="Permanent link">&para;</a></h3>
+<p>Producto U3 / producto del curso: sistema Big Data distribuido end-to-end para procesamiento batch y streaming, analítica/ML, observabilidad y visualización BI para la toma de decisiones.</p>
+<p>Resultado esperado U3: el estudiante integra los componentes desarrollados en las unidades anteriores, despliega o empaqueta el sistema mediante prácticas de DataOps/DevOps, prepara una demo end-to-end, documenta la operación del sistema, valida resultados técnicos y analíticos, y sustenta una solución final orientada a la toma de decisiones.</p>
+<table>
+<thead>
+<tr>
+<th>Sesión</th>
+<th>Tema (sílabo)</th>
+<th>Módulo <code>lambda26</code></th>
+<th>Trabajo principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S13</td>
+<td>Integración del sistema, DataOps y BI.</td>
+<td>todos</td>
+<td>Demo end-to-end de batch, streaming, observabilidad y BI/ML integrados.</td>
+</tr>
+<tr>
+<td>S14</td>
+<td>Revisión técnica final y hardening.</td>
+<td>todos</td>
+<td>Checklist de hardening, guion de demostración y documentación operativa.</td>
+</tr>
+<tr>
+<td>S15</td>
+<td>Integración del sistema Big Data end-to-end: procesamiento batch y streaming, DataOps, observabilidad, BI/ML, documentación y despliegue.</td>
+<td>—</td>
+<td><strong>Producto final:</strong> sistema Big Data distribuido end-to-end, defendido técnicamente.</td>
+</tr>
+<tr>
+<td>S16</td>
+<td>Integración de sistemas Big Data: evaluación final.</td>
+<td>—</td>
+<td>Evaluación final individual: demostración y preguntas técnicas pendientes.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="arquitectura-lambda26">Arquitectura <code>lambda26</code><a class="headerlink" href="#arquitectura-lambda26" title="Permanent link">&para;</a></h2>
+<h3 id="nivel-1-contexto-vista-simple">Nivel 1: Contexto (vista simple)<a class="headerlink" href="#nivel-1-contexto-vista-simple" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>flowchart LR
+    subgraph Fuentes["Fuentes de eventos"]
+        direction TB
+        IoTSensors["uso-atmos&lt;br/&gt;ESP32: sensores atmosféricos"]
+        MS1["uso-microserv&lt;br/&gt;(secundario: monitoreo de MS)"]
+        Fast1["uso-rapido&lt;br/&gt;(secundario: aprender Kafka)"]
+    end
+
+    Kafka1["kafka"]
+
+    subgraph Procesamiento["uso-pyspark"]
+        direction TB
+        Batch["batch, interactivo"]
+        Streaming["streaming + inferencia ML"]
+    end
+
+    subgraph BatchAnalitico["Analítica batch"]
+        direction LR
+        CDC1["uso-replica-cdc"]
+        DW1[("Data warehouse&lt;br/&gt;PostgreSQL")]
+        BITR1["uso-bi-tiempo-real&lt;br/&gt;(dbt)"]
+        CDC1 --&gt; DW1 --&gt; BITR1
+    end
+
+    Obs1["obs&lt;br/&gt;Prometheus + Grafana"]
+
+    IoTSensors --&gt; Kafka1
+    Fast1 -.-&gt; Kafka1
+    MS1 -.-&gt; Kafka1
+    MS1 -.-&gt;|"logs, estado"| Obs1
+    Kafka1 --&gt; Streaming
+    Batch -.-&gt;|"modelo entrenado"| Streaming
+    CDC1 -.-&gt; Kafka1
+    BITR1 --&gt; Obs1
+    Streaming --&gt; Obs1
+    Kafka1 --&gt; Obs1
+
+    classDef today fill:#ffe08a,stroke:#9a6b00,stroke-width:2px,color:#111;
+    class Batch today;</code></pre>
+<p><code>uso-pyspark</code> (batch) es el único componente activo en S1 — el resto se retoma progresivamente desde S6 en adelante. <code>uso-atmos</code> es la fuente principal de la inferencia ML en streaming de S10: un ESP32 con sensores captura variables atmosféricas (temperatura, humedad, presión) y las publica como <code>atmos-eventos</code> en Kafka; <code>uso-pyspark</code> (streaming) las consume, les aplica el modelo entrenado en S4 (<code>.transform()</code> por micro-batch) y genera la predicción del siguiente paso de tiempo, que Grafana muestra por polling. Predecir el siguiente valor de una variable continua es un caso de series de tiempo natural. <code>uso-rapido</code> y <code>uso-microserv</code> son casos de uso secundarios: el primero para aprender Kafka, el segundo para monitorear logs/estado de microservicios en Grafana — ninguno es la fuente de la predicción. El detalle completo de cada módulo, puertos y conexiones internas está en el Nivel 2.</p>
+<h3 id="nivel-2-detalle-de-contenedores">Nivel 2: Detalle de contenedores<a class="headerlink" href="#nivel-2-detalle-de-contenedores" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>flowchart LR
+    subgraph PySparkModule["uso pyspark - batch, interactivo"]
+        direction TB
+        Notebooks["sXX-nombre/*.ipynb&lt;br/&gt;ETL, entrenamiento ML"]
+        Jupyter["Jupyter&lt;br/&gt;localhost:4488"]
+        Spark["Spark / PySpark&lt;br/&gt;localhost:4042"]
+        Data["sXX-nombre/data/*.csv"]
+        Artifacts["sXX-nombre/&lt;br/&gt;modelos entrenados"]
+        Notebooks --&gt; Jupyter --&gt; Spark
+        Data --&gt; Spark --&gt; Artifacts
+    end
+
+    subgraph StreamingModule["uso-pyspark - streaming, contenedor propio"]
+        Scripts["scripts/*.py&lt;br/&gt;consumer + inferencia&lt;br/&gt;spark-submit"]
+    end
+
+    Artifacts -.-&gt;|"modelo (volumen compartido)"| Scripts
+
+    subgraph UseIoT["uso-atmos (fuente principal ML)"]
+        IoT["3 sensores ESP32 simulados&lt;br/&gt;temperatura, humedad, presión&lt;br/&gt;publica atmos-eventos (3 particiones)"]
+    end
+
+    subgraph UseCDC["uso-replica-cdc"]
+        CDC["pendiente&lt;br/&gt;MySQL -&gt; Debezium -&gt; Kafka -&gt; PostgreSQL RAW&lt;br/&gt;solo migración/replica"]
+    end
+
+    subgraph UseBITR["uso-bi-tiempo-real"]
+        direction TB
+        Listener["pendiente&lt;br/&gt;escucha nuevos registros&lt;br/&gt;en el data warehouse"]
+        DBT["dbt: staging -&gt; intermediate -&gt; marts&lt;br/&gt;transforma RAW -&gt; modelos BI"]
+        Listener --&gt; DBT
+    end
+
+    subgraph KafkaModule["kafka"]
+        direction TB
+        subgraph KafkaStack[" "]
+            direction TB
+            Kafka["Apache Kafka&lt;br/&gt;kafka:9092&lt;br/&gt;localhost:49092"]
+            KafkaUI["Kafka UI&lt;br/&gt;localhost:48085"]
+            KafkaExporter["Kafka Exporter&lt;br/&gt;localhost:49308"]
+            Kafka --&gt; KafkaUI
+            Kafka --&gt; KafkaExporter
+        end
+    end
+
+    subgraph ObsModule["obs"]
+        direction TB
+        subgraph ObsStack[" "]
+            direction TB
+            Prometheus["Prometheus&lt;br/&gt;localhost:49090"]
+            Grafana["Grafana&lt;br/&gt;localhost:43000"]
+            Prometheus --&gt; Grafana
+        end
+    end
+
+    StreamingModule --&gt;|"U2: streaming consumer"| Kafka
+    UseIoT --&gt;|"atmos-eventos"| Kafka
+    UseCDC -. "futuro: migracion CDC" .-&gt; Kafka
+    UseCDC -. "nuevo registro en el DW" .-&gt; UseBITR
+    DBT -. "Grafana consulta marts cada 1s (polling)" .-&gt; Grafana
+    Grafana -. "consulta predicción (según granularidad del modelo)" .-&gt; Scripts
+    KafkaExporter --&gt;|"métricas"| Prometheus
+
+    style KafkaStack fill:transparent,stroke:transparent,color:transparent
+    style ObsStack fill:transparent,stroke:transparent,color:transparent</code></pre>
+<ul>
+<li><code>uso-pyspark</code> tiene dos partes, en <strong>contenedores separados</strong> (no se mezcla lo interactivo con lo que corre en producción): la parte batch/interactiva (U1) — notebooks, Jupyter y Spark local, con datos y salidas dentro de la carpeta de cada sesión (<code>sXX-nombre/</code>) — y la parte streaming (<code>scripts/*.py</code>, S8 y S10), un contenedor propio que reutiliza la misma imagen con PySpark pero ejecuta <code>spark-submit</code> en vez de Jupyter, como proceso persistente. Un notebook no es apto para un job que debe correr sin parar; y un job de producción no debería competir por recursos con el contenedor de exploración. El entrenamiento de un modelo ML es siempre batch (MLlib no soporta aprendizaje incremental) y ocurre en el contenedor interactivo (S4); la <em>inferencia</em> sí puede aplicarse en streaming — el contenedor de <code>scripts/*.py</code> monta como volumen compartido (de solo lectura) el modelo ya entrenado en S4, y le aplica <code>.transform()</code> a cada micro-batch que llega por Kafka, sin reentrenar.</li>
+<li>La predicción de <code>scripts/*.py</code> (S10) se escribe en una tabla de Postgres (no en un archivo ni en memoria del proceso), para que Grafana la consulte igual que consulta <code>marts</code>. Grafana muestra la predicción del siguiente paso de tiempo (minuto, hora, u otra granularidad, según con qué haya sido entrenado el modelo en S4) — no un valor fijo, se actualiza en cada corrida del script. No se usa Streamlit para esto: Streamlit sirve para una app ML interactiva (carga el modelo, tiene incluso una nube gratuita para desplegarla), pero no es un dashboard en vivo — no encaja con el requisito de mostrar la inferencia en streaming.</li>
+<li><code>uso-rapido</code> y <code>uso-microserv</code> son casos de uso <strong>secundarios</strong>, con propósitos distintos entre sí: <code>uso-rapido</code> (<code>ec-eventos-py</code>) es el ejercicio más simple para aprender Kafka — publicar y consumir eventos sin la complejidad de microservicios completos. <code>uso-microserv</code> (<code>ec-orden-ms</code>, <code>ec-pago-ms</code>) es para <strong>monitorear la aplicación</strong>: logs y estado de los microservicios, expuestos vía Actuator + Micrometer y scrapeados por el mismo Prometheus de <code>obs</code>, visualizados en Grafana — no es solo un ejemplo de eventos de negocio, es el caso de uso de observabilidad a nivel de aplicación (<code>obs</code> observa Kafka; <code>uso-microserv</code> observa los propios microservicios). Ninguno de los dos alimenta la inferencia ML de S10.</li>
+<li><code>uso-atmos</code> es el caso de uso <strong>principal para la inferencia ML en streaming</strong> (S10): sensores de variables atmosféricas (temperatura, humedad, presión) publicando <code>atmos-eventos</code> — predecir el siguiente valor de una serie de tiempo continua encaja de forma natural con este tipo de dato, a diferencia de eventos de negocio discretos. <code>uso-replica-cdc</code> (solo migración/replica CDC) también queda pendiente. Ambos se retoman según el alcance de cada equipo.</li>
+<li><code>uso-bi-tiempo-real</code> es un módulo aparte de <code>uso-replica-cdc</code>: <code>uso-replica-cdc</code> únicamente replica (MySQL -&gt; Debezium -&gt; Kafka -&gt; PostgreSQL RAW), no transforma. <code>uso-bi-tiempo-real</code> escucha los nuevos registros que llegan al data warehouse (por ejemplo con <code>LISTEN</code>/<code>NOTIFY</code> de PostgreSQL) y dispara un proyecto dbt (mismas capas que BI: <code>staging</code> → <code>intermediate</code> como views, <code>marts</code> como tables, con su propio <code>profile: lambda26</code> apuntando por <code>type: postgres</code> al mismo RAW) para generar los modelos BI — sin esto, las tablas <code>marts</code> quedarían desactualizadas. Grafana no recibe un aviso de dbt: <strong>consulta</strong> (polling) las tablas <code>marts</code> en su propio intervalo de refresco (configurable, hasta cada 1 segundo), así que ve el dato transformado en cuanto dbt termina de correr.</li>
+<li><code>kafka</code> es la columna vertebral de ingesta y <code>obs</code> (Prometheus/Grafana) da observabilidad sobre el Kafka Exporter — ambos se integran desde U2.</li>
+<li>El curso no usa una herramienta de BI aparte (como Power BI): <strong>Grafana</strong> cumple ese rol — además de observabilidad técnica, visualiza los KPIs de negocio (ya transformados por <code>uso-bi-tiempo-real</code>) en tiempo real (refresco configurable, hasta cada 1 segundo).</li>
+</ul>
+<h2 id="flujo-de-trabajo">Flujo de trabajo<a class="headerlink" href="#flujo-de-trabajo" title="Permanent link">&para;</a></h2>
+<ol>
+<li>El equipo decide la arquitectura Big Data (Lambda o Kappa) para su propio caso de negocio, apoyándose en el módulo <code>uso-pyspark</code> para reconocer el ecosistema (S1).</li>
+<li>El procesamiento batch se construye con PySpark sobre <code>uso-pyspark</code>: extracción, transformaciones, particionamiento, formatos analíticos y un primer modelo ML distribuido (S2-S5).</li>
+<li>La ingesta en tiempo real se activa sobre <code>kafka</code>: primero con eventos de negocio (<code>uso-rapido</code>/<code>uso-microserv</code>, S6 — caso secundario, práctica del patrón pub/sub) y luego con eventos IoT/sensores de variables atmosféricas (<code>uso-atmos</code>, S7 — caso principal, es la fuente que alimenta la inferencia ML de S10).</li>
+<li>El procesamiento streaming con Spark Structured Streaming corre como <code>scripts/*.py</code> (<code>spark-submit</code>, proceso persistente, no notebook) sobre <code>uso-pyspark</code>: el consumer de Kafka (S8) y la inferencia en vivo sobre los <code>atmos-eventos</code> de <code>uso-atmos</code>, con el modelo entrenado en S4 (S10). La observabilidad (<code>obs</code>) y las salidas BI/ML distribuidas se integran en el resto de U2 (S9, S11-S12).</li>
+<li>El sistema completo se integra, se estabiliza con prácticas DataOps/DevOps y se defiende técnicamente en U3 (S13-S16).</li>
+</ol>
+<h2 id="enlaces">Enlaces<a class="headerlink" href="#enlaces" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="silabo_bigdata_2026_2/">Sílabo 2026-2</a></li>
+<li><a href="sesiones/S01_Arquitectura_Big_Data_Lambda_Kappa/">S1 - Arquitectura Big Data: Lambda y Kappa, batch vs. streaming</a></li>
+<li><a href="sesiones/S02_Fundamentos_PySpark_Transformaciones_Lazy_Evaluation/">S2 - Fundamentos PySpark: transformaciones, funciones, agrupaciones y evaluación perezosa</a></li>
+<li><a href="sesiones/S03_Procesamiento_Calidad_Datos_Particionamiento/">S3 - Procesamiento y Calidad de Datos: filtrado, duplicados, nulos y particionamiento analítico</a></li>
+<li><a href="sesiones/S04_ML_Distribuido_Regresion_Spark_MLlib/">S4 - ML Distribuido con Spark MLlib (Regresión)</a></li>
+<li><a href="sesiones/S05_Evaluacion_Unidad_1/">S5 - Evaluación de la Unidad I</a></li>
+<li><a href="sesiones/S06_Ingesta_Eventos_Empresariales_Kafka/">S6 - Ingesta de Eventos Empresariales en Tiempo Real</a></li>
+<li><a href="sesiones/S07_Ingesta_Eventos_IoT_Sensores_Tiempo_Real/">S7 - Ingesta de Eventos IoT/Sensores en Tiempo Real</a></li>
+<li><a href="sesiones/S08_Procesamiento_Streaming_Spark_Ventanas_Watermarking/">S8 - Procesamiento en Streaming con Spark: Ventanas, Watermarking y Semántica de Entrega</a></li>
+<li><a href="proyecto-sello/">Guía de Proyecto Sello</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
