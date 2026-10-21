@@ -1,0 +1,27 @@
+name: lambda26-uso-crypto
+
+services:
+  uso-crypto:
+    build: .
+    container_name: lambda26-uso-crypto
+
+    volumes:
+      - ./app:/app
+      - ../pyspark/sesiones/s10-series-tiempo-inferencia-streaming/data/crypto/raw:/data:ro
+
+    working_dir: /app
+    command: sleep infinity
+
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+      KAFKA_TOPIC_CRYPTO: crypto-btc-eventos
+      CRYPTO_INTERVAL_MS: "3000"
+      CRYPTO_CSV: /data/BTCUSDT-1m-2024-12.csv
+
+    networks:
+      - lambda26-kafka-net
+
+networks:
+  lambda26-kafka-net:
+    external: true
+    name: lambda26-kafka-net
